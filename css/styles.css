@@ -22,6 +22,13 @@ text-decoration: underline;
 font-family: "Bebas Neue",cursive;
 }
 
+h1 {
+  animation-name: slidein;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
 main {
 background-position: center;
 text-align: center;
@@ -37,12 +44,25 @@ section {
   background-color: black;
 }
 
+
 body {
   font-family: "Encode Sans SC", sans-serif;
   font-size: 13px;
   background-image: url('../images/red.jpg');
 }
 
+
+@keyframes slidein {
+  from {
+    margin-left: 100%
+    width: 300%;
+  }
+
+  to {
+    margin-right: 100%;
+    width: 100%;
+  }
+}
 
 /* =================================== */
 
@@ -73,4 +93,6 @@ body {
 a {
     color: red;
 }
-/*  */
+/* =====================================
+
+}
