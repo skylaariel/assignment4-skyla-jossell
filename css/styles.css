@@ -15,7 +15,6 @@
 header {
 background-color: transparent;
 max-width: max-content;
-margin-inline: auto;
 text-align: center;
 color: red;
 text-decoration: underline;
@@ -36,10 +35,14 @@ text-align: center;
 section p {
   background-color: black;
   margin-block: 10px;
-  padding-block: 10px;
-  position: relative;
 }
 
+img[src*="scorpion.jpg"] {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+}
 section {
   background-color: black;
 }
@@ -54,7 +57,7 @@ body {
 
 @keyframes slidein {
   from {
-    margin-left: 100%
+    margin-left: 100%;
     width: 300%;
   }
 
